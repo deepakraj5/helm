@@ -1,0 +1,14 @@
+deployment:
+  name: teamcity-deployment
+  replicas: 2
+  image: deepakdocker04/teamcity:latest
+  imagePullPolicy: Always
+  containerPort: 3000
+
+
+
+service:
+  name: teamcity-service
+  selectorName: teamcity-deployment
+  port: 3000
+  targetPort: 3000
