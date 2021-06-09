@@ -1,7 +1,7 @@
 deployment:
   name: teamcity-deployment
   replicas: 2
-  image: deepakdocker04/teamcity:latest
+  image: deepakdocker04/kube-tls:0.0.1.RELEASE
   imagePullPolicy: Always
   containerPort: 3000
 
